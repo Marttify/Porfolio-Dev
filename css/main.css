@@ -1,0 +1,214 @@
+/* -----------------------------
+   PreEntrega1+Aguilar
+   CSS inicial sin flex ni grid
+   ----------------------------- */
+
+/* Estilo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #ff9966;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #ff6f61;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Secciones */
+section {
+    padding: 30px 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Títulos */
+section h2 {
+    color: #222;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Sobre mí */
+.sobre-mi p {
+    text-align: justify;
+}
+
+/* Proyectos */
+.proyecto {
+    margin-bottom: 20px;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.proyecto h3 {
+    margin: 10px 0 5px 0;
+}
+
+.proyecto a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+/* Habilidades */
+.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin: 5px 0;
+}
+
+/* Formulario de contacto */
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+
+/* Sección del proyecto */
+.proyecto-detalle {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.proyecto-detalle h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.proyecto-detalle img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.proyecto-detalle p {
+    margin-bottom: 10px;
+}
+
+/* Botón volver */
+.proyecto-detalle .btn {
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.proyecto-detalle .btn:hover {
+    background-color: #e64a19;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
