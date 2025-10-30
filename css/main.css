@@ -285,3 +285,96 @@ section h2 {
         text-align: left;
     }
 }
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* =========================================
+   Detalle del Proyecto
+   Grid con grid-template-areas
+========================================= */
+.proyecto-detalle {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "imagen"
+        "descripcion"
+        "tecnologias"
+        "btn";
+    grid-gap: 1.5rem;
+    max-width: 80vw;        /* Limita el ancho del contenido */
+    margin: 2rem auto;           /* Centrado horizontal */
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Grid items asignados a áreas */
+.proyecto-detalle h2 {
+    grid-area: titulo;
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+}
+
+.proyecto-detalle img {
+    grid-area: imagen;
+    width: 100%;
+    height: 201px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.proyecto-detalle p:first-of-type {
+    grid-area: descripcion;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.proyecto-detalle p:last-of-type {
+    grid-area: tecnologias;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.proyecto-detalle .btn {
+    grid-area: btn;
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+    justify-self: center;     /* Centrado horizontal del botón */
+    transition: background-color 0.3s;
+}
+
+.proyecto-detalle .btn:hover {
+    background-color: #ff3f31;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+@media (min-width: 768px) {
+    .proyecto-detalle {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "imagen descripcion"
+            "imagen tecnologias"
+            "btn btn";
+        grid-gap: 2rem;
+    }
+
+    .proyecto-detalle h2 {
+        text-align: left;
+    }
+
+    .proyecto-detalle p {
+        text-align: left;
+    }
+}
