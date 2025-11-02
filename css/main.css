@@ -197,18 +197,11 @@ section h2 {
     font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 0.75rem;
-    border-radius: 6px;
-    border: 1px solid var(--color-background-dark);
-    color: var(--color-text-dark);
-}
-
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: var(--color-primary);
-    outline: none;
+    border-color: var(--color-accent); /* rojo definido en :root */
+    outline: none; /* quita el borde azul predeterminado */
+    box-shadow: 0 0 0 2px rgba(255, 63, 49, 0.3); /* opcional: halo rojo sutil */
 }
 
 .contact-form button {
