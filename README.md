@@ -19,18 +19,21 @@ Welcome to my personal web portfolio! This portfolio showcases my skills, projec
 ## Project Structure
 ```
 
-portfolio/
-├─ css/
-│  └─ main.css
-├─ img/
-│  └─ project/
-│     └─ proyecto1.png
-├─ pages/
-│  ├─ proyecto1.html
-│  ├─ proyecto2.html
-│  └─ proyecto3.html
-├─ index.html
-└─ README.md
+PORFOLIO-DEV/
+│
+├── assets/
+│   ├── css/
+│   ├── img/
+│   └── sketch/
+│
+├── pages/
+│   ├── project-1.html
+│   ├── project-2.html
+│   ├── project-3.html
+│   └── index.html
+│
+├── index.html
+└── README.md
 
 ````
 
