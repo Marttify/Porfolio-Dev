@@ -1,53 +1,73 @@
+<!-- 
+  Proyecto: Portafolio de Martín Aguilar
+  Autor: Martín Aguilar
+  Fecha: 2025-11-02
+  Frameworks: Bootstrap 5
+  Descripción: Página web personal para mostrar proyectos, habilidades y contacto.
+  Notas: Optimizada para accesibilidad y responsive design.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>Mi Portafolio - Martín Aguilar</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Portafolio de Martín Aguilar, desarrollador web apasionado por crear experiencias digitales.">
+  <meta name="author" content="Martín Aguilar">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <!-- Estilos principales -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!-- =========================================
-    Encabezado y Navegación
-    Basado en un componente Navbar de Bootstrap.
-    Cambios realizados:
-      • Fondo de enlaces cambiado a transparente (bg-transparent)
-      • Color del texto cambiado de azul a blanco (text-white)
-  ========================================= -->
-  <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+  <!-- =======================
+       Header / Navegación
+       Buenas prácticas: semántica, accesibilidad, uso de nav y links descriptivos
+       ======================= -->
+  <header class="d-flex flex-wrap justify-content-center py-3 bg-dark">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi me-2" width="40" height="32">
         <use xlink:href="#bootstrap" />
       </svg>
-      <span class="fs-4 text-white">Mi Portafolio</span>
+      <span class="fs-4">Mi Portafolio</span>
     </a>
 
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="./" class="nav-link bg-transparent text-white" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
-      <li class="nav-item"><a href="#proyectos" class="nav-link bg-transparent text-white">Proyectos</a></li>
-      <li class="nav-item"><a href="#skills" class="nav-link bg-transparent text-white">Habilidades</a></li>
-      <li class="nav-item"><a href="#contacto" class="nav-link bg-transparent text-white">Contacto</a></li>
-    </ul>
+    <nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./" class="nav-link bg-transparent text-white" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
+        <li class="nav-item"><a href="#proyectos" class="nav-link bg-transparent text-white">Proyectos</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link bg-transparent text-white">Habilidades</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link bg-transparent text-white">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Sección de presentación (Hero) -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Hola, soy <span class="highlight">Martín Aguilar</span></h2>
+  <!-- =======================
+       Sección Hero / Presentación
+       Buenas prácticas: semántica, contenido destacado, CTA accesible
+       ======================= -->
+  <section class="hero text-center py-5">
+    <div class="hero-content container">
+      <h1>Hola, soy <span class="highlight">Martín Aguilar</span></h1>
       <p>Desarrollador web apasionado por crear experiencias digitales que generen impacto.</p>
-      <a href="#proyectos" class="btn">Ver mis proyectos</a>
+      <a href="#proyectos" class="bg-custom mt-3">Ver mis proyectos</a>
     </div>
   </section>
 
-  <!-- Sección Sobre mí -->
-  <section id="sobre-mi" class="sobre-mi">
+  <!-- =======================
+       Sección Sobre mí
+       Buenas prácticas: uso de secciones, semántica, contenido descriptivo
+       ======================= -->
+  <section id="sobre-mi" class="sobre-mi container py-5">
     <h2>Sobre mí</h2>
     <p>
       Soy un desarrollador con experiencia en HTML, CSS y JavaScript.
@@ -55,115 +75,99 @@
     </p>
   </section>
 
-
-  <!-- =========================================
-    Sección Proyectos
-    Basado en un componente Card de Bootstrap.
-    Cambios realizados:
-      • Agregue el componente card de Bootstrap para cada proyecto.
-      • Añadí imágenes representativas para cada proyecto.
-      • Incluí botones "Ver más" que enlazan a páginas detalladas de cada proyecto
-      • Organicé los proyectos en un contenedor flexible para mejor presentación.
-      • Añadí títulos y descripciones breves para cada proyecto.
-      • Ajusté el diseño para que sea responsivo y atractivo visualmente.
-  ========================================= -->
-  <section id="proyectos" class="proyectos text-center">
-    <h2 class="fs-4">Proyectos</h2>
+  <!-- =======================
+       Sección Proyectos
+       Buenas prácticas: semántica, optimización de recursos, accesibilidad, responsive
+       ======================= -->
+  <section id="proyectos" class="proyectos container py-5">
+    <h2 class="text-center mb-4">Proyectos</h2>
     <div class="d-flex gap-4 flex-wrap justify-content-center">
       <!-- Proyecto 1 -->
-      <div class="card" style="width: 18rem;">
-        <img src="./img/project/proyecto1.png" class="card-img-top" alt="...">
+      <article class="card" style="width: 18rem;">
+        <img src="./img/project/project-1.png" class="card-img-top" alt="Proyecto Freelancer">
         <div class="card-body">
-          <h5 class="card-title">Proyecto Freelancer</h5>
-          <p class="card-text">Trabajos freelance para clientes emprendedores junto a un colega profesor de CoderHouse y
-            actual desarrollador
-            en Telecom.</p>
-          <a href="./pages/proyecto1.html" class="btn bg-custom">Ver más</a>
+          <h3 class="card-title h5">Proyecto Freelancer</h3>
+          <p class="card-text">Trabajos freelance para clientes emprendedores junto a un colega profesor de CoderHouse y actual desarrollador en Telecom.</p>
+          <a href="./pages/project-1.html" class="bg-custom padding-button">Ver más</a>
         </div>
-      </div>
+      </article>
 
       <!-- Proyecto 2 -->
-      <div class="card" style="width: 18rem;">
-        <img src="./img/project/proyecto2.png" class="card-img-top" alt="...">
+      <article class="card" style="width: 18rem;">
+        <img src="./img/project/project-2.png" class="card-img-top" alt="Proyecto Flutter">
         <div class="card-body">
-          <h5 class="card-title">Proyecto Flutter</h5>
+          <h3 class="card-title h5">Proyecto Flutter</h3>
           <p class="card-text">Plataforma de adopción de mascotas realizada en una simulación de No Country.</p>
-          <a href="./pages/proyecto2.html" class="btn bg-custom">Ver más</a>
+          <a href="./pages/project-2.html" class="bg-custom padding-button">Ver más</a>
         </div>
-      </div>
+      </article>
 
       <!-- Proyecto 3 -->
-      <div class="card" style="width: 18rem;">
-        <img src="./img/project/proyecto1.png" class="card-img-top" alt="...">
+      <article class="card" style="width: 18rem;">
+        <img src="./img/project/project-1.png" class="card-img-top" alt="Proyecto 3">
         <div class="card-body">
-          <h5 class="card-title">Proyecto 3</h5>
+          <h3 class="card-title h5">Proyecto 3</h3>
           <p class="card-text">Descripción breve del proyecto.</p>
-          <a href="./pages/proyecto3.html" class="btn bg-custom">Ver más</a>
+          <a href="./pages/project-3.html" class="bg-custom padding-button">Ver más</a>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
-  <!-- =========================================
-    Sección Habilidades
-    Basado en una lista simple.
-    Cambios realizados:
-      • Creé una lista no ordenada para mostrar las habilidades técnicas.
-      • Añadí estilos personalizados para mejorar la presentación visual.
-      • Organicé las habilidades en un contenedor centrado.
-  ========================================= -->
-  <section id="skills" class="skills">
+  <!-- =======================
+       Sección Habilidades
+       Buenas prácticas: semántica, lista accesible
+       ======================= -->
+  <section id="skills" class="skills container py-5">
     <h2>Habilidades</h2>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>MySQL</li>
-      <li>Express</li>
-      <li>Flutter</li>
-      <li>Swift</li>
+    <ul class="skills-list list-group list-group-flush">
+      <li class="list-group-item">HTML5</li>
+      <li class="list-group-item">CSS3</li>
+      <li class="list-group-item">JavaScript</li>
+      <li class="list-group-item">React</li>
+      <li class="list-group-item">Node.js</li>
+      <li class="list-group-item">MySQL</li>
+      <li class="list-group-item">Express</li>
+      <li class="list-group-item">Flutter</li>
+      <li class="list-group-item">Swift</li>
     </ul>
   </section>
 
-  <!-- =========================================
-    Sección Contacto
-    Basado en un formulario simple.
-    Cambios realizados:
-      • Creé un formulario con campos para nombre, correo y mensaje.
-      • Añadí estilos personalizados para mejorar la presentación visual.
-      • Incluí un botón de envío estilizado.
-  ========================================= -->
-  <section id="contacto" class="contacto">
+  <!-- =======================
+       Sección Contacto
+       Buenas prácticas: semántica, formulario accesible
+       ======================= -->
+  <section id="contacto" class="contacto container py-5">
     <h2>Contacto</h2>
-    <form class="contact-form">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <form class="contact-form" aria-label="Formulario de contacto">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" required>
+      </div>
 
-      <label for="email">Correo</label>
-      <input type="email" id="email" name="email" required>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+      </div>
 
-      <button type="submit" class="btn">Enviar</button>
+      <button type="submit" class="bg-custom">Enviar</button>
     </form>
   </section>
 
-  <!-- =========================================
-    Pie de página
-    Basado en un componente Footer simple.
-    Cambios realizados:
-      • Añadí enlaces a redes sociales.
-      • Incluí información de derechos de autor.
-      • Estilizado para que coincida con el diseño general del portafolio.
-  ========================================= -->
-  <footer class="footer">
+  <!-- =======================
+       Footer
+       Buenas prácticas: semántica, enlaces accesibles, copyright
+       ======================= -->
+  <footer class="footer bg-dark text-white text-center py-3">
     <p>&copy; 2025 Martín Aguilar. Todos los derechos reservados.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/jes%C3%BAs-martin-aguilar/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/jes%C3%BAs-martin-aguilar/" target="_blank" class="text-white">LinkedIn</a> |
+      <a href="https://github.com/" target="_blank" class="text-white">GitHub</a>
     </div>
   </footer>
 
