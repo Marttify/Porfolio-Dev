@@ -4,7 +4,7 @@
 ![Profile Photo](./assets/img/screen.png) <!-- Cambia la ruta a tu foto -->
 
 ## Overview
-Welcome to my personal web portfolio! This portfolio showcases my skills, projects, and experience as a web developer. It is built with **HTML5, CSS3, JavaScript**, and **Bootstrap 5** for responsive design.
+Welcome to my personal web portfolio! This portfolio showcases my skills, projects, and experience as a web developer. It is built with **HTML5, CSS3**, and **Bootstrap 5** for responsive design.
 
 ## Features
 - **Semantic HTML5 structure** for accessibility and SEO.
