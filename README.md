@@ -29,8 +29,7 @@ PORFOLIO-DEV/
 ├── pages/
 │   ├── project-1.html
 │   ├── project-2.html
-│   ├── project-3.html
-│   └── index.html
+│   └── project-3.html
 │
 ├── index.html
 └── README.md
