@@ -39,7 +39,7 @@ PORFOLIO-DEV/
 ## How to Run
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/Marttify/Porfolio-Dev.git
 ````
 
 2. Open `index.html` in your preferred browser.
