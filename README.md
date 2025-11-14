@@ -41,6 +41,15 @@ PORFOLIO-DEV/
 ```bash
 git clone https://github.com/Marttify/Porfolio-Dev.git
 ````
+```bash
+cd Porfolio-Dev
+````
+```bash
+npm install
+````
+```bash
+sass --watch assets/sass/main.scss assets/css/main.css
+````
 
 2. Open `index.html` in your preferred browser.
 3. Navigate through sections: Home, About Me, Projects, Skills, and Contact.
