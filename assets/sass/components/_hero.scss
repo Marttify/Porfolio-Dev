@@ -1,0 +1,17 @@
+.hero {
+  background-color: $color-secondary;
+  color: $color-text-light;
+  text-align: center;
+  padding: 40px 20px;
+  height: 50vh;
+  @extend %flex-center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}

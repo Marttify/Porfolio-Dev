@@ -1,0 +1,25 @@
+.sobre-mi {
+  width: 100%;
+  padding: 6rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: $color-text-muted;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 1rem;
+  }
+}

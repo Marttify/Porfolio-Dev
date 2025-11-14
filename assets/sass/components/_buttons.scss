@@ -1,0 +1,16 @@
+.bg-custom {
+  @include button-base();
+  background-color: $color-primary;
+  color: $color-text-light;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+.padding-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  @include transition(background-color .3s, color .3s);
+}

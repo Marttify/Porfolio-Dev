@@ -1,7 +1,7 @@
 <!-- 
   Proyecto: Portafolio de Martín Aguilar
   Autor: Martín Aguilar
-  Fecha: 2025-11-02
+  Fecha: 2025-11-06
   Frameworks: Bootstrap 5
   Descripción: Página web personal para mostrar proyectos, habilidades y contacto.
   Notas: Optimizada para accesibilidad y responsive design.
@@ -16,7 +16,8 @@
   <title>Mi Portafolio - Martín Aguilar</title>
 
   <!-- SEO básico -->
-  <meta name="description" content="Portafolio de Martín Aguilar, desarrollador web apasionado por crear experiencias digitales.">
+  <meta name="description"
+    content="Portafolio de Martín Aguilar, desarrollador web apasionado por crear experiencias digitales.">
   <meta name="author" content="Martín Aguilar">
 
   <!-- Bootstrap CSS -->
@@ -55,7 +56,7 @@
        Sección Hero / Presentación
        Buenas prácticas: semántica, contenido destacado, CTA accesible
        ======================= -->
-  <section class="hero text-center py-5">
+  <section class="hero text-center py-5 fade-in">
     <div class="hero-content container">
       <h1>Hola, soy <span class="highlight">Martín Aguilar</span></h1>
       <p>Desarrollador web apasionado por crear experiencias digitales que generen impacto.</p>
@@ -67,7 +68,7 @@
        Sección Sobre mí
        Buenas prácticas: uso de secciones, semántica, contenido descriptivo
        ======================= -->
-  <section id="sobre-mi" class="sobre-mi container py-5">
+  <section id="sobre-mi" class="sobre-mi container py-5 fade-in delay-1">
     <h2>Sobre mí</h2>
     <p>
       Soy un desarrollador con experiencia en HTML, CSS y JavaScript.
@@ -80,35 +81,36 @@
        Buenas prácticas: semántica, optimización de recursos, accesibilidad, responsive
        ======================= -->
   <section id="proyectos" class="proyectos container py-5">
-    <h2 class="text-center mb-4">Proyectos</h2>
+    <h2 class="text-center mb-4 fade-in">Proyectos</h2>
     <div class="d-flex gap-4 flex-wrap justify-content-center">
       <!-- Proyecto 1 -->
-      <article class="card" style="width: 18rem;">
-        <img src="./assets/img/project/project-1.png" class="card-img-top" alt="Proyecto Freelancer">
+      <article class="card zoom-in delay-1" style="width: 18rem;">
+        <img src="./assets/img/project/project-2.png" class="card-img-top" alt="Proyecto Freelancer">
         <div class="card-body">
           <h3 class="card-title h5">Proyecto Freelancer</h3>
-          <p class="card-text">Trabajos freelance para clientes emprendedores junto a un colega profesor de CoderHouse y actual desarrollador en Telecom.</p>
-          <a href="./pages/project-1.html" class="bg-custom padding-button">Ver más</a>
+          <p class="card-text">Trabajos freelance para clientes emprendedores junto a un colega profesor de CoderHouse y
+            actual desarrollador en Telecom.</p>
+          <a href="./pages/project-1.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver más</a>
         </div>
       </article>
 
       <!-- Proyecto 2 -->
-      <article class="card" style="width: 18rem;">
+      <article class="card zoom-in delay-1" style="width: 18rem;">
         <img src="./assets/img/project/project-2.png" class="card-img-top" alt="Proyecto Flutter">
         <div class="card-body">
           <h3 class="card-title h5">Proyecto Flutter</h3>
           <p class="card-text">Plataforma de adopción de mascotas realizada en una simulación de No Country.</p>
-          <a href="./pages/project-2.html" class="bg-custom padding-button">Ver más</a>
+          <a href="./pages/project-2.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver más</a>
         </div>
       </article>
 
       <!-- Proyecto 3 -->
-      <article class="card" style="width: 18rem;">
-        <img src="./assets/img/project/project-1.png" class="card-img-top" alt="Proyecto 3">
+      <article class="card zoom-in delay-1" style="width: 18rem;">
+        <img src="./assets/img/project/project-2.png" class="card-img-top" alt="Proyecto 3">
         <div class="card-body">
           <h3 class="card-title h5">Proyecto 3</h3>
           <p class="card-text">Descripción breve del proyecto.</p>
-          <a href="./pages/project-3.html" class="bg-custom padding-button">Ver más</a>
+          <a href="./pages/project-3.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver más</a>
         </div>
       </article>
     </div>
@@ -145,20 +147,20 @@
     <form class="contact-form" aria-label="Formulario de contacto">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" id="nombre" name="nombre" class="form-control" required>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre completo" autocomplete="name" required>
       </div>
 
       <div class="mb-3">
         <label for="email" class="form-label">Correo</label>
-        <input type="email" id="email" name="email" class="form-control" required>
+        <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" autocomplete="email" required>
       </div>
 
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
       </div>
 
-      <button type="submit" class="bg-custom">Enviar</button>
+      <button title="Enviar mensaje" type="submit" class="bg-custom">Enviar</button>
     </form>
   </section>
 
@@ -166,7 +168,7 @@
        Footer
        Buenas prácticas: semántica, enlaces accesibles, copyright
        ======================= -->
-  <footer class="footer bg-dark text-white text-center py-3">
+  <footer class="footer bg-dark text-white text-center py-3 fade-in delay-2">
     <p>&copy; 2025 Martín Aguilar. Todos los derechos reservados.</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/mart%C3%ADn-aguilar/" target="_blank" class="text-white">LinkedIn</a> |
