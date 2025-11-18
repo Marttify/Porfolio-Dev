@@ -24,7 +24,6 @@ PORFOLIO-DEV/
 ├── assets/
 │   ├── css/
 │   ├── img/
-│   └── sketch/
 │
 ├── pages/
 │   ├── project-1.html
