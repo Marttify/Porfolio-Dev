@@ -31,8 +31,8 @@ PORFOLIO-DEV/
 │   └── project-3.html
 │
 ├── sketch/
-│   ├── Winsical.html
-│   └── Wireframe.html
+│   ├── Winsical
+│   └── Wireframe.pdf
 ├── index.html
 └── README.md
 
