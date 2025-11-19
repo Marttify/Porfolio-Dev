@@ -24,13 +24,15 @@ PORFOLIO-DEV/
 ├── assets/
 │   ├── css/
 │   ├── img/
-│   └── sketch/
 │
 ├── pages/
 │   ├── project-1.html
 │   ├── project-2.html
 │   └── project-3.html
 │
+├── sketch/
+│   ├── Winsical
+│   └── Wireframe.pdf
 ├── index.html
 └── README.md
 
